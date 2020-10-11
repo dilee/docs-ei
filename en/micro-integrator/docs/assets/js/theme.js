@@ -332,11 +332,7 @@ var editIcon = document.getElementById('editIcon');
 
 window.addEventListener('scroll', function() {
     var scrollPosition = window.scrollY || document.documentElement.scrollTop;
-    if (scrollPosition >= 90) {
-        editIcon.classList.add('active');
-    } else {
-        editIcon.classList.remove('active');
-    }
+    editIcon.classList.remove('active');
 });
 
 // change homepage url
