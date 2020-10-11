@@ -1,12 +1,15 @@
-version: "3.7"
+version: "3.8"
 services:
   service:
     image: integration_docker_image:latest
     ports:
       - 8290:8290
+      - 8292:8292
   backend:
     image: backend_docker_image:latest
     expose:
       - 8290
+      - 8292
     ports:
       - 8291:8290
+      - 8292:8292
